@@ -5,6 +5,6 @@ Super fast vim setup.
 It will delete all existing vim config files!
 
 ## Usage
-> git clone git@github.com:mdoff/vim-config.git 
-> cd vim-config/
-> ./install.sh:
+    git clone git@github.com:mdoff/vim-config.git 
+    cd vim-config/
+    ./install.sh:
