@@ -10,4 +10,4 @@ set hlsearch            " highlight matches
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
 
-colors twilight
+colors seattle
