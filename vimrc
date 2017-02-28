@@ -7,7 +7,21 @@ set cursorline          " highlisht current line
 set wildmenu            " visual autocomplete for command menu" 
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
+set lazyredraw          " redraw only when we need to.
+
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
+
+" move vertically by visual line
+nnoremap j gj
+nnoremap k gk
+
+" move to beginning/end of line
+nnoremap B ^
+nnoremap E $
+
+" $/^ doesn't do anything
+nnoremap $ <nop>
+nnoremap ^ <nop>
 
 colors seattle
