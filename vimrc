@@ -8,6 +8,7 @@ set wildmenu            " visual autocomplete for command menu"
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 set lazyredraw          " redraw only when we need to.
+set relativenumber      " shows relative line numbers 
 
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>

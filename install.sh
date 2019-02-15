@@ -23,3 +23,5 @@ git clone https://github.com/plasticboy/vim-markdown.git ~/.vim/bundle/vim-markd
 git clone https://github.com/terryma/vim-multiple-cursors ~/.vim/bundle/vim-multiple-cursors
 
 git clone git://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround
+
+git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/bundle/typescript-vim
