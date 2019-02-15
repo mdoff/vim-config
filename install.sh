@@ -10,7 +10,7 @@ cp -r vim ~/.vim
 #installing pathogen
 mkdir ~/.vim/autoload
 mkdir ~/.vim/bundle
-wget https://github.com/tpope/vim-pathogen/raw/master/autoload/pathogen.vim -O ~/.vim/autoload/pathogen.vim
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 #installing plugins
 
