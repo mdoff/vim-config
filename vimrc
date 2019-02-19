@@ -9,10 +9,17 @@ set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 set lazyredraw          " redraw only when we need to.
 set relativenumber      " shows relative line numbers 
+"set listchars=tab:>·,trail:.,extends:>,precedes:<,space:. " define how whit space charcters should be displayed
+"set list                " show whitespace characters
+" toggle NERDTree plugin for Ctr + n
+map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
 
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
 
+let g:indent_guides_enable_on_vim_startup = 1
 " move vertically by visual line
 nnoremap j gj
 nnoremap k gk

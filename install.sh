@@ -20,8 +20,10 @@ git clone https://github.com/maksimr/vim-jsbeautify.git ~/.vim/bundle/vim-jsbeau
 
 git clone https://github.com/plasticboy/vim-markdown.git ~/.vim/bundle/vim-markdown
 
-git clone https://github.com/terryma/vim-multiple-cursors ~/.vim/bundle/vim-multiple-cursors
-
 git clone git://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround
 
 git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/bundle/typescript-vim
+
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+
+git clone git://github.com/nathanaelkane/vim-indent-guides.git ~/.vim/bundle/vim-intend-guides
