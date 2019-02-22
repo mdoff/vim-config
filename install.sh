@@ -16,8 +16,6 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 git clone git://github.com/jiangmiao/auto-pairs.git ~/.vim/bundle/auto-pairs
 
-git clone https://github.com/maksimr/vim-jsbeautify.git ~/.vim/bundle/vim-jsbeautify
-
 git clone https://github.com/plasticboy/vim-markdown.git ~/.vim/bundle/vim-markdown
 
 git clone git://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround
@@ -27,3 +25,11 @@ git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/bundle/typesc
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 
 git clone git://github.com/nathanaelkane/vim-indent-guides.git ~/.vim/bundle/vim-intend-guides
+
+git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javascript
+
+git clone https://github.com/prettier/vim-prettier ~/.vim/bundle/vim-prettier
+cd ~/.vim/bundle/vim-prettier
+yarn install
+cd -
+
