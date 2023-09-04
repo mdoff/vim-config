@@ -135,21 +135,11 @@ require('lazy').setup({
    {
   -- Theme inspired by Atom
      'navarasu/onedark.nvim',
-     -- 'joshdick/onedark.vim',
      priority = 1000,
      config = function()
        vim.cmd.colorscheme 'onedark'
      end,
    },
-  -- {
-  --   'jacoborus/tender.vim',
-  --   name = 'tender',
-  --   priority = 1000,
-  --   config = function()
-  --     vim.cmd.colorscheme 'tender'
-  --   end,
-  -- },
-
   {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
@@ -546,3 +536,5 @@ cmp.setup {
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 vim.wo.relativenumber = true
+vim.opt.spelllang = 'en_gb'
+vim.opt.spell = true
