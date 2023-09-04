@@ -132,23 +132,23 @@ require('lazy').setup({
     },
   },
 
-  --  {
+   {
   -- Theme inspired by Atom
-  --    'navarasu/onedark.nvim',
-  --    'joshdick/onedark.vim',
-  --    priority = 1000,
-  --    config = function()
-  --      vim.cmd.colorscheme 'onedark'
-  --    end,
-  --  },
-  {
-    'jacoborus/tender.vim',
-    name = 'tender',
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'tender'
-    end,
-  },
+     'navarasu/onedark.nvim',
+     -- 'joshdick/onedark.vim',
+     priority = 1000,
+     config = function()
+       vim.cmd.colorscheme 'onedark'
+     end,
+   },
+  -- {
+  --   'jacoborus/tender.vim',
+  --   name = 'tender',
+  --   priority = 1000,
+  --   config = function()
+  --     vim.cmd.colorscheme 'tender'
+  --   end,
+  -- },
 
   {
     -- Set lualine as statusline
