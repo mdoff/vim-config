@@ -539,3 +539,5 @@ cmp.setup {
 vim.wo.relativenumber = true
 vim.opt.spelllang = 'en_gb'
 vim.opt.spell = true
+
+vim.keymap.set('n', '<leader>b', function() vim.cmd(':b#') end, { desc = 'Go to previous buffer' })
