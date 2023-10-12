@@ -141,7 +141,9 @@ require('lazy').setup({
   --   end,
   -- },
   {
-    'catppuccin/nvim', name = "catppuccin", priority = 1000,
+    'catppuccin/nvim',
+    name = "catppuccin",
+    priority = 1000,
     config = function()
       vim.cmd.colorscheme "catppuccin-macchiato"
     end,
@@ -222,6 +224,7 @@ require('lazy').setup({
     'MunifTanjim/prettier.nvim',
     dependencies = { 'jose-elias-alvarez/null-ls.nvim' }
   },
+  { 'leafOfTree/vim-svelte-plugin' },
 }, {})
 
 -- [[ Setting options ]]
@@ -544,3 +547,5 @@ vim.opt.spelllang = 'en_gb'
 vim.opt.spell = true
 
 vim.keymap.set('n', '<leader>b', function() vim.cmd(':b#') end, { desc = 'Go to previous buffer' })
+vim.keymap.set('n', '<leader>sc', function() vim.cmd("Telescope git_status") end,
+  { desc = 'Search files changed since last commit' })
