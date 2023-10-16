@@ -220,11 +220,6 @@ require('lazy').setup({
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   { import = 'custom.plugins' },
-  {
-    'MunifTanjim/prettier.nvim',
-    dependencies = { 'jose-elias-alvarez/null-ls.nvim' }
-  },
-  { 'leafOfTree/vim-svelte-plugin' },
 }, {})
 
 -- [[ Setting options ]]
@@ -542,10 +537,3 @@ cmp.setup {
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
-vim.wo.relativenumber = true
-vim.opt.spelllang = 'en_gb'
-vim.opt.spell = true
-
-vim.keymap.set('n', '<leader>b', function() vim.cmd(':b#') end, { desc = 'Go to previous buffer' })
-vim.keymap.set('n', '<leader>sc', function() vim.cmd("Telescope git_status") end,
-  { desc = 'Search files changed since last commit' })
