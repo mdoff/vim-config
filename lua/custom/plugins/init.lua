@@ -15,12 +15,12 @@ vim.keymap.set('n', '<leader>tb', function() vim.cmd('GitBlameToggle') end,
   { desc = '[T]oggle showing current line [B]lame' })
 vim.keymap.set('n', '<c-d>', '<c-d>zz', { noremap = false })
 vim.keymap.set('n', '<c-u>', '<c-u>zz', { noremap = false })
-vim.keymap.set('n', '<leader>gp', function() vim.cmd("Gitsigns prev_hunk") end,
-  { desc = '[G]o to [P]revious git hunk' })
-vim.keymap.set('n', '<leader>gn', function() vim.cmd("Gitsigns next_hunk") end,
-  { desc = '[G]o to [N]ext git hunk' })
-vim.keymap.set('n', '<leader>tp', function() vim.cmd('Gitsigns preview_hunk') end,
-  { desc = '[T]oggle git [P]review' })
-vim.keymap.set('n', '<leader>rh', function() vim.cmd("Gitsigns reset_hunk") end,
-  { desc = '[R]eset [H]unk' })
+vim.keymap.set('n', '<leader>hP', function() vim.cmd("Gitsigns prev_hunk") end,
+  { desc = 'go to preview git hunk' })
+vim.keymap.set('n', '<leader>hn', function() vim.cmd("Gitsigns next_hunk") end,
+  { desc = 'go to next git hunk' })
+-- vim.keymap.set('n', '<leader>tp', function() vim.cmd('Gitsigns preview_hunk') end,
+--   { desc = '[T]oggle git [P]review' })
+-- vim.keymap.set('n', '<leader>rh', function() vim.cmd("Gitsigns reset_hunk") end,
+--   { desc = '[R]eset [H]unk' })
 return {}
