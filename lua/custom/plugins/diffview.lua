@@ -1,4 +1,4 @@
 return {
-  "sindrets/diffview.nvim",
-  version = "*",
+	"sindrets/diffview.nvim",
+	version = "*",
 }
