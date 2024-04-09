@@ -10,7 +10,13 @@ vim.opt.shiftwidth = 2
 
 vim.keymap.set("n", "<leader>b", function()
 	vim.cmd(":b#")
+end, { desc = "Go to last visited buffer" })
+vim.keymap.set("n", "<leader>p", function()
+	vim.cmd(":bp")
 end, { desc = "Go to previous buffer" })
+vim.keymap.set("n", "<leader>n", function()
+	vim.cmd(":bn")
+end, { desc = "Go to next buffer" })
 vim.keymap.set("n", "<leader>sc", function()
 	vim.cmd("Telescope git_status")
 end, { desc = "[S]earch files [C]hanged since last commit" })
