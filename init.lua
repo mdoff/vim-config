@@ -107,6 +107,17 @@ vim.opt.number = true
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = "a"
 
+
+
+
+
+
+
+
+
+
+
+
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
 
@@ -604,6 +615,17 @@ require("lazy").setup({
 
 	{ -- Autoformat
 		"stevearc/conform.nvim",
+		lazy = false,
+		keys = {
+			{
+				"<leader>f",
+				function()
+					require("conform").format({ async = true, lsp_fallback = true })
+				end,
+				mode = "",
+				desc = "[F]ormat buffer",
+			},
+		},
 		opts = {
 			notify_on_error = false,
 			format_on_save = function(bufnr)
@@ -794,6 +816,7 @@ require("lazy").setup({
 				"cpp",
 				"go",
 				"lua",
+				"luadoc",
 				"python",
 				"rust",
 				"tsx",
@@ -801,11 +824,11 @@ require("lazy").setup({
 				"typescript",
 				"vimdoc",
 				"vim",
+				"markdown",
 				"bash",
 			},
 			-- Autoinstall languages that are not installed
 			auto_install = true,
-			autotag = { enable = true },
 			highlight = {
 				enable = true,
 				-- Some languages depend on vim's regex highlighting system (such as Ruby) for indent rules.

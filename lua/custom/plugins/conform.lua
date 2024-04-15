@@ -23,11 +23,11 @@ return {
 				python = { "isort", "black" },
 				go = { "gofmt", "gofumpt" },
 			},
-			format_on_save = {
-				lsp_fallback = false,
-				async = true,
-				timeout_ms = 5000,
-			},
+			-- format_on_save = {
+			-- 	lsp_fallback = false,
+			-- 	async = true,
+			-- 	timeout_ms = 5000,
+			-- },
 		})
 	end,
 }
