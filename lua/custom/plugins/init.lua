@@ -45,6 +45,10 @@ vim.keymap.set("n", "<leader>hr", function()
 	vim.cmd("Gitsigns reset_hunk")
 end, { desc = "reset git hunk" })
 
+vim.keymap.set("n", "<leader>a", function()
+	vim.cmd("Neogit kind=replace")
+end, { desc = "Open NeoGit in floating window" })
+
 -- vim.keymap.set('n', '<leader>tp', function() vim.cmd('Gitsigns preview_hunk') end,
 --   { desc = '[T]oggle git [P]review' })
 -- vim.keymap.set('n', '<leader>rh', function() vim.cmd("Gitsigns reset_hunk") end,
