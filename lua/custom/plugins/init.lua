@@ -33,7 +33,7 @@ vim.keymap.set("n", "<leader>hn", function()
 	vim.cmd("Gitsigns next_hunk")
 end, { desc = "go to next git hunk" })
 
-vim.keymap.set("n", "<leader>hP", function()
+vim.keymap.set("n", "<leader>hN", function()
 	vim.cmd("Gitsigns prev_hunk")
 end, { desc = "go to previous git hunk" })
 
