@@ -46,8 +46,17 @@ vim.keymap.set("n", "<leader>hr", function()
 end, { desc = "reset git hunk" })
 
 vim.keymap.set("n", "<leader>a", function()
-	vim.cmd("Neogit kind=replace")
+	vim.cmd("Neogit kind=split")
 end, { desc = "Open NeoGit in floating window" })
+
+vim.keymap.set("n", "<leader>o", function()
+	vim.cmd("Oil")
+end, { desc = "Open Oil.nvim" })
+
+
+ -- this will remap `d`elete to delete without putting into register (without copying)
+vim.api.nvim_set_keymap('v', 'd', '"_d', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'd', '"_d', { noremap = true, silent = true })
 
 -- vim.keymap.set('n', '<leader>tp', function() vim.cmd('Gitsigns preview_hunk') end,
 --   { desc = '[T]oggle git [P]review' })
