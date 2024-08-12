@@ -55,11 +55,18 @@ end, { desc = "Open Oil.nvim" })
 
 
  -- this will remap `d`elete to delete without putting into register (without copying)
-vim.api.nvim_set_keymap('v', 'd', '"_d', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', 'd', '"_d', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('v', 'd', '"_d', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', 'd', '"_d', { noremap = true, silent = true })
+
+-- vim.api.nvim_set_keymap('v', 'p', '"0p', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', 'p', '"0p', { noremap = true, silent = true })
 
 -- vim.keymap.set('n', '<leader>tp', function() vim.cmd('Gitsigns preview_hunk') end,
 --   { desc = '[T]oggle git [P]review' })
 -- vim.keymap.set('n', '<leader>rh', function() vim.cmd("Gitsigns reset_hunk") end,
 --   { desc = '[R]eset [H]unk' })
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.bo.softtabstop = 2
 return {}
