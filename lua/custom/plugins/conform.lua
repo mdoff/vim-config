@@ -14,6 +14,7 @@ return {
 				typescriptreact = { "prettier" },
 				svelte = { "prettier" },
 				css = { "prettier" },
+				less = { "prettier" },
 				html = { "prettier" },
 				json = { "prettier" },
 				yaml = { "prettier" },
@@ -22,6 +23,8 @@ return {
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				go = { "gofmt", "gofumpt" },
+				twig = { "twig-cs-fixer" },
+				xml = { "xmlformat" },
 			},
 			-- format_on_save = {
 			-- 	lsp_fallback = false,

@@ -7,6 +7,8 @@ vim.opt.spelllang = "en_gb"
 vim.opt.spell = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.bo.softtabstop = 2
 
 vim.keymap.set("n", "<leader>b", function()
 	vim.cmd(":b#")
@@ -65,8 +67,4 @@ end, { desc = "Open Oil.nvim" })
 --   { desc = '[T]oggle git [P]review' })
 -- vim.keymap.set('n', '<leader>rh', function() vim.cmd("Gitsigns reset_hunk") end,
 --   { desc = '[R]eset [H]unk' })
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
-vim.bo.softtabstop = 2
 return {}
