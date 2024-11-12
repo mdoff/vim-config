@@ -789,7 +789,7 @@ require("lazy").setup({
 		"catppuccin/nvim",
 		name = "catppuccin",
 		config = function()
-			vim.cmd.colorscheme("catppuccin-macchiato")
+			vim.cmd.colorscheme("catppuccin-mocha")
 		end,
 	},
 
