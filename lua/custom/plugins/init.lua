@@ -55,8 +55,7 @@ vim.keymap.set("n", "<leader>o", function()
 	vim.cmd("Oil")
 end, { desc = "Open Oil.nvim" })
 
-
- -- this will remap `d`elete to delete without putting into register (without copying)
+-- this will remap `d`elete to delete without putting into register (without copying)
 -- vim.api.nvim_set_keymap('v', 'd', '"_d', { noremap = true, silent = true })
 -- vim.api.nvim_set_keymap('n', 'd', '"_d', { noremap = true, silent = true })
 
@@ -67,4 +66,13 @@ end, { desc = "Open Oil.nvim" })
 --   { desc = '[T]oggle git [P]review' })
 -- vim.keymap.set('n', '<leader>rh', function() vim.cmd("Gitsigns reset_hunk") end,
 --   { desc = '[R]eset [H]unk' })
+
+vim.api.nvim_set_keymap("n", "<C-a>", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<C-a>", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<LocalLeader>a", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<LocalLeader>a", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "ga", "<cmd>CodeCompanionChat Add<cr>", { noremap = true, silent = true })
+
+-- Expand 'cc' into 'CodeCompanion' in the command line
+vim.cmd([[cab cc CodeCompanion]])
 return {}
