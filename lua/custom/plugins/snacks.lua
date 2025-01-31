@@ -20,7 +20,11 @@ return {
       notification = {
         -- wo = { wrap = true } -- Wrap notifications
       }
-    }
+    },
+    animate = {
+      enabled = true,
+      duration = 10,
+    },
   },
   keys = {
     { "<leader>z",  function() Snacks.zen() end, desc = "Toggle Zen Mode" },

@@ -782,7 +782,7 @@ require("lazy").setup({
 					{ name = "luasnip" },
 					{ name = "path" },
 					{ name = "buffer" },
-					{ name = "codecompanion" },
+					-- { name = "codecompanion" },
 				},
 			})
 		end,
